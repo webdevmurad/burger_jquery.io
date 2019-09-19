@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+}
+
+.menu {
+  opacity: .9;
+  padding: 0;
+  background-color: purple;
+  list-style: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  left: -100vw;
+}
+
+.menu-active {
+  left: 0;
+}
+
+.menu-li {
+  width: 100%;
+}
+
+.menu-src {
+  display: block;
+  line-height: 4;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.menu-src:hover {
+  display: block;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.menu-link {
+  z-index: 9;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.menu-link__active .menu-span {
+  background-color: transparent;
+}
+
+.menu-link__active .menu-span:before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-top: 0;
+}
+
+.menu-link__active .menu-span:after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-top: 0;
+}
+
+.menu-span {
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 50%;
+  margin-top: -1px;
+  display: block;
+  height: 2px;
+  width: 18px;
+  background-color: #333;
+}
+
+.menu-span:before {
+  content: '';
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 50%;
+  margin-top: -6px;
+  display: block;
+  height: 2px;
+  width: 18px;
+  background-color: #333;
+}
+
+.menu-span:after {
+  content: '';
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 50%;
+  margin-top: 3.5px;
+  display: block;
+  height: 2px;
+  width: 18px;
+  background-color: #333;
+}
+
+.list {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
